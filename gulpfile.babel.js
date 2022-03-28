@@ -1,6 +1,6 @@
 // const gulp = require("gulp");
 import gulp from "gulp";
-import pug from "gulp-pug";
+import gpug from "gulp-pug";
 
 const routes = {
   pug:{
@@ -9,6 +9,6 @@ const routes = {
   }
 }
 
-export const pug = () => gulp.src(routes.pug.src).pipe(pug()).pipe(gulp.dest());
+export const pug = () => gulp.src(routes.pug.src).pipe(gpug()).pipe(gulp.dest(routes.pug.dest));
 
-export const dev = () => console.log("I will dev");
+export const dev = gulp.series([pug]);
