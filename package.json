@@ -1,0 +1,26 @@
+{
+  "name": "gulp-practice",
+  "version": "1.0.0",
+  "description": "learn gulp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newddobi/gulp-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newddobi/gulp-practice/issues"
+  },
+  "homepage": "https://github.com/newddobi/gulp-practice#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7"
+  }
+}
