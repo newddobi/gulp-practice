@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "learn gulp",
   "main": "index.js",
+  "browserslist": [
+    "last 2 versions"
+  ],
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
@@ -21,11 +25,20 @@
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.7",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-bro": "^2.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-image": "^4.4.1",
     "gulp-pug": "^5.0.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-sass": "^5.1.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^7.0.1"
   },
   "dependencies": {
-    "del": "^6.0.0"
+    "babelify": "^10.0.0",
+    "uglifyify": "^5.0.2"
   }
 }
